@@ -1,0 +1,10 @@
+.hdr { display:flex; align-items:center; height:38px; min-height:38px; background:var(--b0); border-bottom:1px solid var(--bs); padding:0 14px; user-select:none; flex-shrink:0; gap:10px; }
+.hdr-logo { display:flex; align-items:center; gap:7px; }
+.hdr-logo b { font-size:13px; font-weight:700; letter-spacing:-.03em; }
+.sp { flex:1; }
+.hdr-st { display:flex; align-items:center; gap:6px; font-size:11px; color:var(--t3); }
+.hdr-act { display:flex; align-items:center; gap:6px; }
+.sm { height:2px; border-radius:2px; background:linear-gradient(90deg,transparent,var(--ac),var(--pr),var(--gr),transparent); background-size:200%; animation:shm 2s ease infinite; }
+@keyframes shm { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+.pd { width:6px; height:6px; border-radius:50%; animation:pdt 2s ease infinite; display:inline-block; }
+@keyframes pdt { 0%,100%{opacity:.4;transform:scale(.9)} 50%{opacity:1;transform:scale(1.1)} }

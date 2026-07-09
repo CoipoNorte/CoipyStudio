@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--b0);
+  color: var(--t1);
+  height: 100vh;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root { height: 100vh; display: flex; flex-direction: column; }
+
+::selection { background: var(--acs); }
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--b4); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--t3); }
+
+.H { display: none !important; }
+
+/* CodeMirror overrides */
+.CodeMirror {
+  height: 100% !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 13.5px;
+  line-height: 1.65;
+  background: var(--b1) !important;
+  color: var(--t1) !important;
+  padding-top: 4px;
+}
+.CodeMirror-gutters { background: var(--b1) !important; border-right: 1px solid var(--bs) !important; }
+.CodeMirror-linenumber { color: var(--t3) !important; font-size: 12px; padding: 0 8px 0 12px !important; }
+.CodeMirror-activeline-background { background: var(--acs) !important; }
+.CodeMirror-cursor { border-left: 2px solid var(--ac) !important; }
+.CodeMirror-selected { background: var(--acs) !important; }
+.CodeMirror span.cm-keyword { color: var(--pr); font-weight: 500; }
+.CodeMirror span.cm-def { color: var(--cy); }
+.CodeMirror span.cm-variable { color: var(--t1); }
+.CodeMirror span.cm-variable-2 { color: var(--cy); }
+.CodeMirror span.cm-string { color: var(--gr); }
+.CodeMirror span.cm-number { color: var(--or); }
+.CodeMirror span.cm-comment { color: var(--t3); font-style: italic; }
+.CodeMirror span.cm-builtin { color: var(--rd); }
+.CodeMirror span.cm-operator { color: var(--cy); }
+.CodeMirror span.cm-meta { color: var(--yl); }
+.CodeMirror span.cm-property { color: var(--pr); }
+.CodeMirror span.cm-atom { color: var(--or); }
+.CodeMirror-matchingbracket { color: var(--ac) !important; background: var(--acs) !important; border-bottom: 1px solid var(--ac); }
+.CodeMirror-hints { background: var(--b2) !important; border: 1px solid var(--bd) !important; border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,.5); padding: 4px; font-family: 'JetBrains Mono', monospace; font-size: 12px; }
+.CodeMirror-hint { color: var(--t2) !important; padding: 4px 10px !important; border-radius: 4px; }
+.CodeMirror-hint-active { background: var(--acs) !important; color: var(--t1) !important; }
+.CodeMirror-foldmarker { color: var(--ac); text-shadow: none; }
+.CodeMirror-foldgutter { width: 16px; }
+.CodeMirror-foldgutter-open, .CodeMirror-foldgutter-folded { color: var(--t3); cursor: pointer; }

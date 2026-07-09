@@ -1,0 +1,68 @@
+const LANG = {
+  en: {
+    explorer:'Explorer', packages:'Packages', terminal:'Terminal',
+    loading:'Loading Python...', run:'Run', upload:'Upload Files',
+    drop:'Drop files here or click to browse', browse:'Browse',
+    newfile:'New File', newfolder:'New Folder', rename:'Rename',
+    del:'Delete', open:'Open', duplicate:'Duplicate', download:'Download',
+    cancel:'Cancel', create:'Create', close:'Close', saved:'Saved',
+    done:'Done', installed:' installed', err:'Error: ',
+    installing:'Installing ', ready:'Python 3.11 Ready',
+    init:'Python 3.11 initialized', pipmsg:'micropip ready',
+    keys:'Ctrl+Enter run | Ctrl+S save', preview:'Preview', plots:'Plots',
+    settings:'Settings', appearance:'Appearance', theme:'Theme',
+    language:'Language', termpos:'Terminal Layout', right:'Right',
+    bottom:'Bottom', editor:'Editor', fontsize:'Font Size',
+    tabsize:'Tab Size', wordwrap:'Word Wrap', linenums:'Line Numbers',
+    linter:'Pyflakes Linter', lintdesc:'Check warnings before run',
+    shortcuts:'Shortcuts', about:'About',
+    abouttxt:'No server. Runs 100% in your browser.',
+    dlproject:'Download Project', clear:'Clear',
+  },
+  es: {
+    explorer:'Explorador', packages:'Paquetes', terminal:'Terminal',
+    loading:'Cargando Python...', run:'Ejecutar', upload:'Subir Archivos',
+    drop:'Arrastra archivos o haz clic', browse:'Buscar',
+    newfile:'Nuevo Archivo', newfolder:'Nueva Carpeta', rename:'Renombrar',
+    del:'Eliminar', open:'Abrir', duplicate:'Duplicar', download:'Descargar',
+    cancel:'Cancelar', create:'Crear', close:'Cerrar', saved:'Guardado',
+    done:'Listo', installed:' instalado', err:'Error: ',
+    installing:'Instalando ', ready:'Python 3.11 Listo',
+    init:'Python 3.11 inicializado', pipmsg:'micropip listo',
+    keys:'Ctrl+Enter ejecutar | Ctrl+S guardar', preview:'Vista Previa',
+    plots:'Graficas', settings:'Ajustes', appearance:'Apariencia',
+    theme:'Tema', language:'Idioma', termpos:'Disposicion Terminal',
+    right:'Derecha', bottom:'Abajo', editor:'Editor',
+    fontsize:'Tam. Fuente', tabsize:'Tam. Tab', wordwrap:'Ajuste Linea',
+    linenums:'Num. Lineas', linter:'Linter Pyflakes',
+    lintdesc:'Verificar antes de ejecutar', shortcuts:'Atajos',
+    about:'Acerca de', abouttxt:'Sin servidor. 100% en tu navegador.',
+    dlproject:'Descargar Proyecto', clear:'Limpiar',
+  },
+  pt: {
+    explorer:'Explorador', packages:'Pacotes', terminal:'Terminal',
+    loading:'Carregando Python...', run:'Executar', upload:'Enviar Arquivos',
+    drop:'Arraste arquivos ou clique', browse:'Buscar',
+    newfile:'Novo Arquivo', newfolder:'Nova Pasta', rename:'Renomear',
+    del:'Excluir', open:'Abrir', duplicate:'Duplicar', download:'Baixar',
+    cancel:'Cancelar', create:'Criar', close:'Fechar', saved:'Salvo',
+    done:'Feito', installed:' instalado', err:'Erro: ',
+    installing:'Instalando ', ready:'Python 3.11 Pronto',
+    init:'Python 3.11 inicializado', pipmsg:'micropip pronto',
+    keys:'Ctrl+Enter executar | Ctrl+S salvar', preview:'Pre-visualizar',
+    plots:'Graficos', settings:'Configuracoes', appearance:'Aparencia',
+    theme:'Tema', language:'Idioma', termpos:'Layout Terminal',
+    right:'Direita', bottom:'Abaixo', editor:'Editor',
+    fontsize:'Tam. Fonte', tabsize:'Tam. Tab', wordwrap:'Quebra Linha',
+    linenums:'Num. Linhas', linter:'Linter Pyflakes',
+    lintdesc:'Verificar antes de executar', shortcuts:'Atalhos',
+    about:'Sobre', abouttxt:'Sem servidor. 100% no navegador.',
+    dlproject:'Baixar Projeto', clear:'Limpar',
+  }
+}
+
+export function T(key, lang = 'en') {
+  return (LANG[lang] || LANG.en)[key] || key
+}
+
+export default LANG
